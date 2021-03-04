@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Search Results - Classicmodels Database</title>
+<head>
+</head>
+<body>
+    <h1>Result table</h1>
+    <table border="2" id="table_data">
+    <thead>
+        <tr>
+            <th>customerNumber</th>
+            <th>customerName</th>
+            <th>phone</th>
+            <th>addressLine</th>
+            <th>city</th>
+            <th>country</th>
+        </tr>
+    </thead>
+    <tbody>
+    {%  for cus in customers %}
+        <tr>
+            <td>
+                {{ cus[0] }}
+            </td>
+            <td>
+                {{ cus[1] }}
+            </td>
+            <td>
+                {{ cus[2] }}
+            </td>
+            <td>
+                {{ cus[3] }}
+            </td>
+            <td>
+                {{ cus[4] }}
+            </td>
+            <td>
+                {{ cus[5] }}
+            </td>
+        </tr>
+        {%  endfor %}
+    </tbody>
+    </table>
+</body>
+</html>

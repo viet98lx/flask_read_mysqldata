@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Seach customer</h1>
+    <form method="POST" action="/result">
+        <label for="customers">Choose a field:</label>
+        <select id="field" name="field">
+            <option value="number">NUMBER</option>
+            <option value="name">NAME</option>
+            <option value="phone">PHONE</option>
+            <option value="address">ADDRESS</option>
+        </select>
+        <select id="number" name="number">
+            <option value=10>10</option>
+            <option value=20>20</option>
+            <option value=50>50</option>
+        </select>
+        <input type="text" name="query_string">
+        <input type="submit" value="Search">
+    </form>
+  </body>
+</html>
